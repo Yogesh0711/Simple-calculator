@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div id="outer">
+    <h2 style="color:white;">Simple calculator</h2>
+    <input type="text" name="" value="" id="inputbox"/>
+    <table id="table">
+      <tr>
+        <td><button  class="button grey" onclick="cle()">AC</button></td>
+        <td><button class="button grey" onclick="del()" ><img src="clear.png" id="img" style=""/></button></td>
+        <td><button onclick="sign()"class="button grey">+/-</button></td>
+        <td><button onclick="oper(4)" class="button orange">÷</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="number(7)" class="button black">7</button></td>
+        <td><button onclick="number(8)" class="button black">8</button></td>
+        <td><button onclick="number(9)" class="button black">9</button></td>
+        <td><button onclick="oper(3)" class="button orange">×</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="number(4)" class="button black">4</button></td>
+        <td><button onclick="number(5)" class="button black">5</button></td>
+        <td><button onclick="number(6)" class="button black">6</button></td>
+        <td><button onclick="oper(2)" class="button orange">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="number(1)" class="button black">1</button></td>
+        <td><button onclick="number(2)" class="button black">2</button></td>
+        <td><button onclick="number(3)" class="button black">3</button></td>
+        <td><button onclick="oper(1)" class="button orange">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="oper(5)" class="button black">%</button></td>
+        <td><button onclick="number(0)"  class="button black">0</button></td>
+        <td><button onclick="number('.')" class="button black" >.</button></td>
+        <td><button class="button orange" onclick="result()">=</button></td>
+      </tr>
+    </table>
+    
+  </div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
